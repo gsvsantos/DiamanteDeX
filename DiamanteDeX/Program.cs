@@ -9,11 +9,10 @@ namespace DiamanteDeX
         {
             do
             {
-                Console.Clear();
-                Console.WriteLine("Projeto - Diamante de X\n");
+                ViewUtils.Header();
                 number = GetNumber();
                 OddOrEven();
-                Console.Write($"\nO número ímpar escolhido é: {number}");
+                ViewUtils.PaintWrite($"\nO número ímpar escolhido é: {number}", ConsoleColor.Green);
                 Console.ReadKey();
             }while (true);
         }
@@ -28,7 +27,7 @@ namespace DiamanteDeX
             {
                 if (OddOrEvenCheck())
                 {
-                    Console.WriteLine($"\nEsse número é par! Precisa ser um número ímpar!");
+                    ViewUtils.PaintWriteLine($"\nEsse número é par! Precisa ser um número ímpar!", ConsoleColor.Red);
                     number = GetNumber();
                 }
                 else
