@@ -12,8 +12,8 @@ namespace DiamanteDeX
                 ViewUtils.Header();
                 number = GetNumber();
                 OddOrEven();
-                ViewUtils.PaintWrite($"\nO número ímpar escolhido é: {number}", ConsoleColor.Green);
-                Console.ReadKey();
+                ViewUtils.PaintWriteLine($"\nO número ímpar escolhido é: {number}\n", ConsoleColor.Green);
+                ViewUtils.PressEnter("CONTINUAR");
             }while (true);
         }
         static int GetNumber()
