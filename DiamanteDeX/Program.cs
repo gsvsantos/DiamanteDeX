@@ -1,5 +1,4 @@
-﻿using System.Text.Json.Serialization.Metadata;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using DiamanteDeX.Entities.Utils;
 
 namespace DiamanteDeX
 {
@@ -12,16 +11,15 @@ namespace DiamanteDeX
             {
                 Console.Clear();
                 Console.WriteLine("Projeto - Diamante de X\n");
-                number = GetNumber("\nPor favor, digite um número inteiro para dar início ao desenho do diamante: ");
+                number = GetNumber();
                 OddOrEven();
-                Console.WriteLine($"\nO número ímpar escolhido é: {number}");
+                Console.Write($"\nO número ímpar escolhido é: {number}");
                 Console.ReadKey();
             }while (true);
         }
-        static int GetNumber(string prompt)
+        static int GetNumber()
         {
-            Console.Write(prompt);
-            int input = Convert.ToInt32(Console.ReadLine());
+            int input = Validators.IntVerify("\nPor favor, digite um número inteiro para dar início ao desenho do diamante: ", 0, 50);
             return input;
         }
         static void OddOrEven()
@@ -30,8 +28,8 @@ namespace DiamanteDeX
             {
                 if (OddOrEvenCheck())
                 {
-                    Console.WriteLine($"\nEsse número é par!");
-                    number = GetNumber("\nPor favor, digite um número ímpar: ");
+                    Console.WriteLine($"\nEsse número é par! Precisa ser um número ímpar!");
+                    number = GetNumber();
                 }
                 else
                     break;
