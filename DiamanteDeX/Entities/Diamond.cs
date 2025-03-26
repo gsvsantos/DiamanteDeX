@@ -53,5 +53,11 @@ namespace DiamanteDeX.Entities
                 Console.WriteLine();
             }
         }
+        public static void Draw()
+        {
+            UpperPart();
+            MiddlePart();
+            LowerPart();
+        }
     }
 }
