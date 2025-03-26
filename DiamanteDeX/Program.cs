@@ -21,7 +21,7 @@ namespace DiamanteDeX
         }
         static int GetNumber()
         {
-            int input = Validators.IntVerify("\nPor favor, digite um número inteiro para dar início ao desenho do diamante: ", 0, 50);
+            int input = Validators.IntVerify("\nPor favor, digite um número inteiro para dar início ao desenho do diamante: ");
             return input;
         }
         static void OddOrEven()
