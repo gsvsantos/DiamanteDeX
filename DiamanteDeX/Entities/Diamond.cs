@@ -42,7 +42,7 @@ namespace DiamanteDeX.Entities
         {
             SpacesCount();
             int oldQuantityOfSpaces = quantityOfSpaces;
-            for ( int i = QuantityOfX - 2; i < QuantityOfX; i -= 2)
+            for (int i = QuantityOfX - 2; i < QuantityOfX; i -= 2)
             {
                 for (int j = quantityOfSpaces; j <= oldQuantityOfSpaces; j++)
                 {
