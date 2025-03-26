@@ -31,20 +31,8 @@ namespace DiamanteDeX.Entities.Utils
         {
             switch (type)
             {
-                case "CONTINUAR":
-                    PaintWrite("Pressione [Enter] para continuar.", ConsoleColor.Yellow);
-                    Console.ReadKey();
-                    break;
-                case "TENTAR-NOVAMENTE":
-                    PaintWrite("Pressione [Enter] para tentar novamente.", ConsoleColor.Yellow);
-                    Console.ReadKey();
-                    break;
-                case "VOLTAR-MENU":
-                    PaintWrite("Pressione [Enter] para voltar ao menu principal.", ConsoleColor.Yellow);
-                    Console.ReadKey();
-                    break;
-                case "VER-RESULTADO":
-                    PaintWrite("Pressione [Enter] para ver o resultado.", ConsoleColor.Yellow);
+                case "USAR-NOVAMENTE":
+                    PaintWrite("\nPressione [Enter] para usar novamente.", ConsoleColor.Yellow);
                     Console.ReadKey();
                     break;
             }
