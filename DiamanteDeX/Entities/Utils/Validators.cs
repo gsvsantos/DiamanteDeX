@@ -32,5 +32,22 @@
                 return value;
             } while (true);
         }
+        public static void OddOrEven()
+        {
+            do
+            {
+                if (OddOrEvenCheck())
+                {
+                    ViewUtils.PaintWriteLine($"\nEsse número é par! Precisa ser um número ímpar!", ConsoleColor.Red);
+                    Diamond.QuantityOfX = ViewUtils.GetNumber();
+                }
+                else
+                    break;
+            } while (true);
+        }
+        public static bool OddOrEvenCheck()
+        {
+            return Diamond.QuantityOfX % 2 == 0;
+        }
     }
 }
