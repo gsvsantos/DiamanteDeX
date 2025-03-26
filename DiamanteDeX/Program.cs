@@ -10,14 +10,15 @@ namespace DiamanteDeX
             do
             {
                 ViewUtils.Header();
-                Diamond.QuantityOfX = 11;
+                Diamond.QuantityOfX = GetNumber();
                 OddOrEven();
                 ViewUtils.PaintWriteLine($"\nO número ímpar escolhido é: {Diamond.QuantityOfX}\n", ConsoleColor.Green);
+
                 Diamond.UpperPart();
                 Diamond.MiddlePart();
+                Diamond.LowerPart();
 
-
-                ViewUtils.PressEnter("CONTINUAR");
+                ViewUtils.PressEnter("USAR-NOVAMENTE");
             }while (true);
         }
         static int GetNumber()
