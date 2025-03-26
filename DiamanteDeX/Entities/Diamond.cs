@@ -26,7 +26,10 @@
                 Console.Write(new string('X', i));
                 Console.WriteLine();
             }
-
+        }
+        public static void MiddlePart()
+        {
+            Console.WriteLine(new string('X', Diamond.QuantityOfX));
         }
     }
 }
