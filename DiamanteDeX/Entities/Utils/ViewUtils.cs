@@ -3,13 +3,6 @@
 {
     public class ViewUtils
     {
-        public static void Header()
-        {
-            Console.Clear();
-            ViewColors.PaintWriteLine("/=-=-=-=-=-=-=-=-=-=-=-=\\");
-            ViewColors.PaintWriteLine("      Diamante de X", ConsoleColor.Cyan);
-            ViewColors.PaintWriteLine("\\=-=-=-=-=-=-=-=-=-=-=-=/");
-        }
         public static void PressEnter(string type)
         {
             switch (type)
