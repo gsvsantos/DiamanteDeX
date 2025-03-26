@@ -27,7 +27,7 @@
                 }
                 if (value <= minValue || value > maxValue)
                 {
-                    ViewColors.PaintWriteLine($"O valor deve estar entre {minValue} e {maxValue}.", ConsoleColor.Red);
+                    ViewColors.PaintWriteLine($"O valor deve estar entre 3 e {maxValue}.", ConsoleColor.Red);
                     continue;
                 }
                 return value;
@@ -39,7 +39,7 @@
             {
                 if (OddOrEvenCheck())
                 {
-                    ViewColors.PaintWriteLine($"\nEsse número é par! Precisa ser um número ímpar!", ConsoleColor.Red);
+                    ViewColors.PaintWriteLine($"\nEsse número é inválido! Tente novamente.", ConsoleColor.Red);
                     Diamond.QuantityOfX = ViewUtils.GetNumber();
                 }
                 else

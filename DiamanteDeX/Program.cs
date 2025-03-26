@@ -12,7 +12,7 @@ namespace DiamanteDeX
                 ViewWrite.Header();
                 Diamond.QuantityOfX = ViewUtils.GetNumber();
                 Validators.OddOrEven();
-                ViewColors.PaintWriteLine($"\nO número ímpar escolhido é: {Diamond.QuantityOfX}\n", ConsoleColor.Green);
+                ViewColors.PaintWriteLine($"\nO número escolhido é: {Diamond.QuantityOfX}\n", ConsoleColor.Green);
 
                 Diamond.Draw();
 
