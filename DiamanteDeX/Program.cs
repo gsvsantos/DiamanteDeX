@@ -1,18 +1,22 @@
-﻿using DiamanteDeX.Entities.Utils;
+﻿using DiamanteDeX.Entities;
+using DiamanteDeX.Entities.Utils;
 
 namespace DiamanteDeX
 {
     internal class Program
     {
-        public static int number;
         static void Main(string[] args)
         {
             do
             {
                 ViewUtils.Header();
-                number = GetNumber();
+                Diamond.QuantityOfX = 11;
                 OddOrEven();
-                ViewUtils.PaintWriteLine($"\nO número ímpar escolhido é: {number}\n", ConsoleColor.Green);
+                ViewUtils.PaintWriteLine($"\nO número ímpar escolhido é: {Diamond.QuantityOfX}\n", ConsoleColor.Green);
+                Diamond.UpperPart();
+                Console.WriteLine(new string('X', Diamond.QuantityOfX));
+
+
                 ViewUtils.PressEnter("CONTINUAR");
             }while (true);
         }
@@ -28,7 +32,7 @@ namespace DiamanteDeX
                 if (OddOrEvenCheck())
                 {
                     ViewUtils.PaintWriteLine($"\nEsse número é par! Precisa ser um número ímpar!", ConsoleColor.Red);
-                    number = GetNumber();
+                    Diamond.QuantityOfX = GetNumber();
                 }
                 else
                     break;
@@ -36,7 +40,7 @@ namespace DiamanteDeX
         }
         static bool OddOrEvenCheck()
         {
-            return number % 2 == 0;
+            return Diamond.QuantityOfX % 2 == 0;
         }
     }
 }
