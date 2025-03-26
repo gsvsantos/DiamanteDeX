@@ -1,12 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DiamanteDeX.Entities
+﻿namespace DiamanteDeX.Entities
 {
-    internal class Diamond
+    public class Diamond
     {
+        public static int QuantityOfX { get; set; }
+        static int quantityOfSpaces;
+
+        public static int SpacesCount()
+        {
+            for (int i = 1; i < QuantityOfX; i += 2)
+            {
+                quantityOfSpaces++;
+            }
+            return quantityOfSpaces;
+        }
+        public static void UpperPart()
+        {
+            SpacesCount();
+            for (int i = 1; i < QuantityOfX; i += 2)
+            {
+                for (int j = quantityOfSpaces; j >= 1; j--)
+                {
+                    Console.Write(" ");
+                }
+                quantityOfSpaces--;
+                Console.Write(new string('X', i));
+                Console.WriteLine();
+            }
+
+        }
     }
 }
