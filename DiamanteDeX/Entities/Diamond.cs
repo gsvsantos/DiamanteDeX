@@ -29,13 +29,13 @@ namespace DiamanteDeX.Entities
                     Console.Write(" ");
                 }
                 quantityOfSpaces--;
-                ViewUtils.PaintWrite(new string('X', i), ConsoleColor.Red);
+                ViewColors.PaintWrite(new string('X', i), ConsoleColor.Red);
                 Console.WriteLine();
             }
         }
         static void MiddlePart()
         {
-            ViewUtils.PaintWrite(new string('X', Diamond.QuantityOfX), ConsoleColor.White);
+            ViewColors.PaintWrite(new string('X', Diamond.QuantityOfX), ConsoleColor.White);
             Console.WriteLine();
         }
         static void LowerPart()
@@ -53,7 +53,7 @@ namespace DiamanteDeX.Entities
                 quantityOfSpaces--;
                 if (i < 0)
                     break;
-                ViewUtils.PaintWrite(new string('X', i), ConsoleColor.Red);
+                ViewColors.PaintWrite(new string('X', i), ConsoleColor.Red);
                 Console.WriteLine();
             }
         }
