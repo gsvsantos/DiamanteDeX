@@ -31,5 +31,10 @@
                     break;
             }
         }
+        public static int GetNumber()
+        {
+            int input = Validators.IntVerify("\nPor favor, digite um número inteiro para dar início ao desenho do diamante: ", 2);
+            return input;
+        }
     }
 }
