@@ -14,9 +14,7 @@ namespace DiamanteDeX
                 OddOrEven();
                 ViewUtils.PaintWriteLine($"\nO número ímpar escolhido é: {Diamond.QuantityOfX}\n", ConsoleColor.Green);
 
-                Diamond.UpperPart();
-                Diamond.MiddlePart();
-                Diamond.LowerPart();
+                Diamond.Draw();
 
                 ViewUtils.PressEnter("USAR-NOVAMENTE");
             }while (true);
