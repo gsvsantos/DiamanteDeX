@@ -1,4 +1,5 @@
 ﻿namespace DiamanteDeX.Entities.Utils
+
 {
     public class ViewWrite
     {
@@ -11,7 +12,7 @@
         }
         public static void NumberChose()
         {
-            ViewColors.PaintWriteLine($"\nO número escolhido é: {Diamond.QuantityOfX}\n", ConsoleColor.Green);
+            ViewColors.PaintWriteLine($"\nO número escolhido foi: {Diamond.QuantityOfX}\n", ConsoleColor.Green);
         }
     }
 }
