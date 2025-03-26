@@ -19,7 +19,7 @@ O projeto está organizado na seguinte forma:
   - [`ViewColors.cs`](https://github.com/gsvsantos/DiamanteDeX/blob/master/DiamanteDeX/Entities/Utils/ViewColors.cs): Define as cores dos textos, resultando em uma interação mais divertida.
   - [`ViewUtils.cs`](https://github.com/gsvsantos/DiamanteDeX/blob/master/DiamanteDeX/Entities/Utils/ViewUtils.cs): Lida com a impressão das interações com o usuário.
   - [`ViewWrite.cs`](https://github.com/gsvsantos/DiamanteDeX/blob/master/DiamanteDeX/Entities/Utils/ViewWrite.cs): Imprime o cabeçalho e o texto de número escolhido.
-  - [`ViewWriteErrors.cs`](https://github.com/gsvsantos/DiamanteDeX/blob/master/DiamanteDeX/Entities/Utils/ViewWriteErrors.cs): Contém os métodos para imprimir as mensagens de erros, conforme contexto em `Validators.cs`.
+  - [`ViewWriteErrors.cs`](https://github.com/gsvsantos/DiamanteDeX/blob/master/DiamanteDeX/Entities/Utils/ViewWriteErrors.cs): Contém os métodos para imprimir as mensagens de erros, conforme contexto em [`Validators.cs`](https://github.com/gsvsantos/DiamanteDeX/blob/master/DiamanteDeX/Entities/Utils/Validators.cs).
 
 ## Requisitos
 - .NET SDK (recomendado .NET 8.0 ou superior) para compilação e execução do projeto.
