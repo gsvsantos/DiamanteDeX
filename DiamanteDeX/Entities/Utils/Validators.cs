@@ -26,7 +26,7 @@
                 }
                 if (value <= minValue || value > maxValue)
                 {
-                    ViewUtils.PaintWriteLine($"O valor deve estar entre 1 e {maxValue}.", ConsoleColor.Red);
+                    ViewUtils.PaintWriteLine($"O valor deve estar entre {minValue} e {maxValue}.", ConsoleColor.Red);
                     continue;
                 }
                 return value;
