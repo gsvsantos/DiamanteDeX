@@ -11,23 +11,23 @@
                 string input = Console.ReadLine()!;
                 if (string.IsNullOrEmpty(input))
                 {
-                    ViewWrite.IsNotANumber(input);
+                    ViewWriteErrors.IsNotANumber(input);
                     continue;
                 }
                 input = input.Trim();
                 if (input.Contains(' ') || input.Contains('.') || input.Contains(','))
                 {
-                    ViewWrite.NumberWithChar();
+                    ViewWriteErrors.NumberWithChar();
                     continue;
                 }
                 if (!int.TryParse(input, out int value))
                 {
-                    ViewWrite.InvalidNumber();
+                    ViewWriteErrors.InvalidNumber();
                     continue;
                 }
                 if (value <= minValue || value > maxValue)
                 {
-                    ViewWrite.NumberBetweenMinAndMax(maxValue);
+                    ViewWriteErrors.NumberBetweenMinAndMax(maxValue);
                     continue;
                 }
                 return value;
@@ -39,7 +39,7 @@
             {
                 if (OddOrEvenCheck())
                 {
-                    ViewWrite.IsNotAEven();
+                    ViewWriteErrors.IsNotAEven();
                     Diamond.QuantityOfX = ViewUtils.GetNumber();
                 }
                 else
