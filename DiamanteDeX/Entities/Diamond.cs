@@ -7,7 +7,7 @@ namespace DiamanteDeX.Entities
         public static int QuantityOfX { get; set; }
         static int quantityOfSpaces;
 
-        public static int SpacesCount()
+        static int SpacesCount()
         {
             for (int i = 1; i < QuantityOfX; i += 2)
             {
@@ -15,7 +15,11 @@ namespace DiamanteDeX.Entities
             }
             return quantityOfSpaces;
         }
-        public static void UpperPart()
+        static void ResetSpaces()
+        {
+            quantityOfSpaces = 0;
+        }
+        static void UpperPart()
         {
             SpacesCount();
             for (int i = 1; i < QuantityOfX; i += 2)
@@ -29,12 +33,12 @@ namespace DiamanteDeX.Entities
                 Console.WriteLine();
             }
         }
-        public static void MiddlePart()
+        static void MiddlePart()
         {
             ViewUtils.PaintWrite(new string('X', Diamond.QuantityOfX), ConsoleColor.White);
             Console.WriteLine();
         }
-        public static void LowerPart()
+        static void LowerPart()
         {
             SpacesCount();
             int oldQuantityOfSpaces = quantityOfSpaces;
@@ -58,6 +62,7 @@ namespace DiamanteDeX.Entities
             UpperPart();
             MiddlePart();
             LowerPart();
+            ResetSpaces();
         }
     }
 }
