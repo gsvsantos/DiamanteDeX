@@ -1,4 +1,5 @@
 ﻿namespace DiamanteDeX.Entities.Utils
+
 {
     public class ViewWriteErrors
     {
