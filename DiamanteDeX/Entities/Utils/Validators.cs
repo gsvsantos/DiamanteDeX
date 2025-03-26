@@ -11,23 +11,23 @@
                 string input = Console.ReadLine()!;
                 if (string.IsNullOrEmpty(input))
                 {
-                    ViewColors.PaintWriteLine($"'{input}' não é um número...", ConsoleColor.Red);
+                    ViewWrite.IsNotANumber(input);
                     continue;
                 }
                 input = input.Trim();
                 if (input.Contains(' ') || input.Contains('.') || input.Contains(','))
                 {
-                    ViewColors.PaintWriteLine("O valor não pode conter espaço ' ', ponto (.), ou vírgula (,)!", ConsoleColor.Red);
+                    ViewWrite.NumberWithChar();
                     continue;
                 }
                 if (!int.TryParse(input, out int value))
                 {
-                    ViewColors.PaintWriteLine("O valor digitado não é um número válido.", ConsoleColor.Red);
+                    ViewWrite.InvalidNumber();
                     continue;
                 }
                 if (value <= minValue || value > maxValue)
                 {
-                    ViewColors.PaintWriteLine($"O valor deve estar entre 3 e {maxValue}.", ConsoleColor.Red);
+                    ViewWrite.NumberBetweenMinAndMax(maxValue);
                     continue;
                 }
                 return value;
@@ -39,7 +39,7 @@
             {
                 if (OddOrEvenCheck())
                 {
-                    ViewColors.PaintWriteLine($"\nEsse número é inválido! Tente novamente.", ConsoleColor.Red);
+                    ViewWrite.IsNotAEven();
                     Diamond.QuantityOfX = ViewUtils.GetNumber();
                 }
                 else
