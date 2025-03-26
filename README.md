@@ -11,15 +11,15 @@ Um projeto desenvolvido em C# capaz de gerar um diamante utilizando a letra 'X'.
 ## Organização do Projeto
 O projeto está organizado na seguinte forma:
 
-- `Program.cs`: É o arquivo principal, o primeiro a rodar quando você executa o programa.
+- [`Program.cs`](https://github.com/gsvsantos/DiamanteDeX/blob/master/DiamanteDeX/Program.cs): É o arquivo principal, o primeiro a rodar quando você executa o programa.
 - **Entities/**
-  - `Diamond.cs`: Contém a lógica que constrói e imprime o diamante.
+  - [`Diamond.cs`](https://github.com/gsvsantos/DiamanteDeX/blob/master/DiamanteDeX/Entities/Diamond.cs): Contém a lógica que constrói e imprime o diamante.
 - **Entities/Utils/**
-  - `Validators.cs`: Contém métodos para validar a entrada do usuário.
-  - `ViewColors.cs`: Define as cores dos textos, resultando em uma interação mais divertida.
-  - `ViewUtils.cs`: Lida com a impressão das interações com o usuário.
-  - `ViewWrite.cs`: Imprime o cabeçalho e o texto de número escolhido.
-  - `ViewWriteErrors.cs`: Contém os métodos para imprimir as mensagens de erros, conforme contexto em `Validators.cs`.
+  - [`Validators.cs`](https://github.com/gsvsantos/DiamanteDeX/blob/master/DiamanteDeX/Entities/Utils/Validators.cs): Contém métodos para validar a entrada do usuário.
+  - [`ViewColors.cs`](https://github.com/gsvsantos/DiamanteDeX/blob/master/DiamanteDeX/Entities/Utils/ViewColors.cs): Define as cores dos textos, resultando em uma interação mais divertida.
+  - [`ViewUtils.cs`](https://github.com/gsvsantos/DiamanteDeX/blob/master/DiamanteDeX/Entities/Utils/ViewUtils.cs): Lida com a impressão das interações com o usuário.
+  - [`ViewWrite.cs`](https://github.com/gsvsantos/DiamanteDeX/blob/master/DiamanteDeX/Entities/Utils/ViewWrite.cs): Imprime o cabeçalho e o texto de número escolhido.
+  - [`ViewWriteErrors.cs`](https://github.com/gsvsantos/DiamanteDeX/blob/master/DiamanteDeX/Entities/Utils/ViewWriteErrors.cs): Contém os métodos para imprimir as mensagens de erros, conforme contexto em `Validators.cs`.
 
 ## Requisitos
 - .NET SDK (recomendado .NET 8.0 ou superior) para compilação e execução do projeto.
